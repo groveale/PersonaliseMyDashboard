@@ -1,0 +1,50 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "personalise-my-dashboard-client-side-solution",
+    "id": "bbd2e7a4-3e9f-48fa-994e-f28ed7704fb7",
+    "version": "1.0.0.2",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "PersonaliseMyDashboard description"
+      },
+      "longDescription": {
+        "default": "PersonaliseMyDashboard description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "personalise-my-dashboard Feature",
+        "description": "The feature that activates elements of the personalise-my-dashboard solution.",
+        "id": "ea3083e8-e3c7-420d-96e8-e8097ceca2c5",
+        "version": "1.0.0.2"
+      }
+    ],
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "GroupMember.ReadWrite.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Directory.Read.All"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/personalise-my-dashboard.sppkg"
+  }
+}

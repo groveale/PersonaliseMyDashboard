@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "whichFolder": "subdir",
+    "solutionName": "PersonaliseMyDashboard",
+    "componentType": "adaptiveCardExtension",
+    "aceTemplateType": "Basic",
+    "componentName": "MyDashboard",
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.2",
+    "libraryName": "personalise-my-dashboard",
+    "libraryId": "bbd2e7a4-3e9f-48fa-994e-f28ed7704fb7",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionShortDescription": "PersonaliseMyDashboard description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false
+  }
+}

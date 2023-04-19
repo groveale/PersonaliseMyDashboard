@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "my-dashboard-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/myDashboard/MyDashboardAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/myDashboard/MyDashboardAdaptiveCardExtension.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MyDashboardAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myDashboard/loc/{locale}.js"
+  }
+}

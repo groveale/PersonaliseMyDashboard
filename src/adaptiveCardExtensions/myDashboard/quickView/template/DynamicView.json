@@ -1,0 +1,77 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Choose which Cards your would like to include in your personal Dashboard",
+                    "wrap": true,
+                    "size": "Default",
+                    "separator": true,
+                    "fontType": "Default"
+                }
+            ],
+            "spacing": "Medium"
+        },
+        {
+            "type": "Container",
+            "items": [
+            {
+                "type": "Container",
+                "$data": "${cards}",
+                "items": [
+                    {
+                        "id": "${identifier}",
+                        "type": "Input.Toggle",
+                        "title": "${title}",
+                        "value": "${isMember}",
+                        "spacing": "Medium"
+                    }
+                ],
+                "spacing": "large",
+                "separator": true
+            }
+            ],
+            "spacing": "Medium",
+            "style": "emphasis"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "RichTextBlock",
+                    "inlines": [
+                        {
+                            "type": "TextRun",
+                            "text": "NOTE: ",
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextRun",
+                            "text": "Changes may take a few hours to reflect"
+                        }
+                    ]
+                },
+                {
+                    "type": "ActionSet",
+                    "actions": [
+                        {
+                            "type": "Action.Submit",
+                            "title": "Save Changes",
+                            "style": "positive",
+                            "data": {
+                                "id": "save"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "spacing": "Medium",
+            "style": "emphasis"
+        }
+    ]
+}
