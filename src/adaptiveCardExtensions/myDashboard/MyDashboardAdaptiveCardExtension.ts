@@ -94,7 +94,6 @@ export default class MyDashboardAdaptiveCardExtension extends BaseAdaptiveCardEx
       .then(() => {
         // Loop through all the items and get the group id and check if the user is a member
         this.state.cardAudienceItems.forEach(async (item) => {
-          console.log("Attempting to get group from name");
           const group = await graphService.GetGroupWithName(item.groupName);
           
           // group should allways be found as group field is used in SPO
@@ -103,8 +102,7 @@ export default class MyDashboardAdaptiveCardExtension extends BaseAdaptiveCardEx
 
           let isMember = false
           if (groupId !== "") {
-            console.log("Attempting to get group membership");
-            //isMember = await graphService.IsLoggedInUserAMember(groupId);
+            isMember = await graphService.IsLoggedInUserAMember(groupId);
           }
 
           // method to update list items based on group id and isMember
